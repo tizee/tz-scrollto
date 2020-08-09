@@ -12,7 +12,7 @@ import pkg from './package.json';
 const extensions = ['.js', '.ts', '.jsx', '.tsx'];
 
 export default {
-  input: 'src/template.ts',
+  input: 'src/scrollto.ts',
   // external modules that exclude from the bundle file
   external: [],
   plugins: [
@@ -29,17 +29,20 @@ export default {
     // Browser and NodeJS
     {
       file: pkg.browser,
-      format: 'umd',
-      name: 'templateBabel',
+      format: 'iife',
+      exports: 'auto',
+      name: 'tzScrollTo',
     },
     // CommonJS (Node) and ES module (for bundlers) build
     {
       file: pkg.main,
       format: 'cjs',
+      exports: 'auto',
     },
     {
       file: pkg.module,
       format: 'es',
+      exports: 'auto',
     },
   ],
 };

@@ -1,7 +1,7 @@
 {
-  "name": "ts-rollup-boilerplate",
-  "version": "0.0.2",
-  "description": "A simple Typescript bolierplate with baisc rollup configuration",
+  "name": "tz-scrollto",
+  "version": "0.0.1",
+  "description": "a simple scroll-to plugin",
   "author": "tizee",
   "license": "MIT",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
-  "browser": "dist/bundle.umd.js",
+  "browser": "dist/bundle.iife.js",
   "types": "dist/types/index.d.ts",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
